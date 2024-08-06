@@ -1,14 +1,14 @@
-# SQL Queries Portfolio
+# SQL Employee Data Analytics Queries
 
 ## Overview
 
-This repository contains a series of SQL Server queries designed to analyze and extract insights from employee data. The queries are based on datasets from [Employee Dataset(All in One)](https://www.kaggle.com/datasets/ravindrasinghrana/employeedataset/data). The dataset includes four components and I used three of the components:
+This repository contains a series of SQL Server queries designed to analyze and extract insights from employee data. The queries are based on datasets from [Employee Dataset(All in One)](https://www.kaggle.com/datasets/ravindrasinghrana/employeedataset/data). The dataset includes four components, of which three of the components were used:
 
 1. **Employee Data**: A simulated dataset reflecting employee details and organizational structure, designed for HR and data analysis tasks.
 2. **Training/Development Data**: Information about employee participation in training and development programs, capturing various metrics related to training activities.
 3. **Employee Engagement Survey Data**: Survey results providing insights into employee engagement, satisfaction, and work-life balance.
 
-### Datasets
+## Datasets
 
 **Employee Data**: 
 - **Employee ID**: Unique identifier for each employee.
@@ -55,7 +55,7 @@ This repository contains a series of SQL Server queries designed to analyze and 
 - **Satisfaction Score**: Numerical score indicating job satisfaction.
 - **Work-Life Balance Score**: Numerical score reflecting work-life balance perceptions.
 
-### Data Transformation
+## Data Transformation
 
 The datasets were transformed using Power Query in [MSExcel](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products-b?ef_id=_k_328579c5fd991c308c901f77d27db64f_k_&OCID=AIDcmm474qp8el_SEM__k_328579c5fd991c308c901f77d27db64f_k_&msclkid=328579c5fd991c308c901f77d27db64f) to:
 - Change date formats to SQL-compatible formats.
@@ -66,7 +66,7 @@ The transformed data was imported into a SQL Server database with the following 
 - **TrainingAndDevelopment**
 - **EmployeeEngagementSurvey**
 
-### SQL Queries
+## SQL Queries
 
 Below are the SQL queries used for various analytical needs:
 
@@ -245,3 +245,6 @@ Below are the SQL queries used for various analytical needs:
     GROUP BY ei.StateCode, te.TotalCount
     ORDER BY EmployeeCount DESC
     ;
+
+## License
+This repository is licensed under the [MIT License](https://mit-license.org/), allowing users to freely use, modify, and distribute the content while providing attribution to the original creator.
